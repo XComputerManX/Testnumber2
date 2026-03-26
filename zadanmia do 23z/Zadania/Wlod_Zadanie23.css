@@ -1,0 +1,39 @@
+p#pogrubienie_wlodarczyk {
+    font-weight: bold;
+    font-size: 35px;
+    color: #9446CD;
+}
+
+p#pochylona_wlodarczyk {
+    font-style: italic;
+    font-size: 40pt;
+    color: #F8C569;
+}
+
+p#index_gorny_wlodarczyk {
+    vertical-align: super;
+    font-size: 1.5cm;
+    color: #A89319;
+}
+
+p#index_dolny_wlodarczyk {
+    vertical-align: sub;
+    font-size: 2.5cm;
+    color: rgb(27%, 97%, 88%);
+}
+
+p#mono_wlodarczyk {
+    font-family: monospace;
+    font-size: 45px;
+    color: #28E369;
+}
+
+p#powiekszenie_wlodarczyk {
+    font-size: larger;
+    color: #62439B;
+}
+
+p#pomniejszenie_wlodarczyk {
+    font-size: smaller;
+    color: rgb(78%, 65%, 22%);
+}
