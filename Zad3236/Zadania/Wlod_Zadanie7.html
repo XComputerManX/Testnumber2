@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <style>
+            textarea {
+                resize:none;
+                width: 500px;
+                height: 230px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>1. Na co pozwala styl lokalny, który element będzie formatowany z użyciem stylu
+lokalnego,</h2>
+        <textarea disabled> lokalny (zwany też stylem wpisanym lub inline) pozwala na przypisanie unikalnych reguł CSS bezpośrednio do konkretnego, pojedynczego elementu HTML. Używa się go poprzez atrybut style="" wewnątrz tagu otwierającego danego elementu. 
+
+    Pozwala na: szybkie testowanie zmian wizualnych, nadpisywanie stylów zdefiniowanych w arkuszach zewnętrznych lub wewnętrznych (ma najwyższy priorytet).
+    Formatowany element: tylko ten konkretny element, w którego tagu otwierającym zadeklarowano atrybut style (np. dany akapit <p>, nagłówek <h1>, czy kontener <div>).</textarea>
+
+        <h2>2. Składnia teoretyczna ( z użyciem ramki otaczającej→ może być tabela o jednej
+komórce, zastosuj „znaki specjalne” do napisania definicji stylu lokalnego tak aby
+instrukcja CSS nie wykonywała się a tylko wyświetlała wewnątrz ramki [& nbsp;
+spacja niełamana] przykład „znaku specjalnego”),</h2>
+        <textarea disabled> Składnia deklaracji wewnątrz atrybutu style to pary cecha: wartość; oddzielone średnikami. Poniżej znajduje się to w ramce z wykorzystaniem znaków specjalnych (np. &lt; dla < i &gt; dla >), aby kod nie był interpretowany przez przeglądarkę, a jedynie wyświetlany: &lt;p style=&quot; &amp;nbsp; cecha: wartość; &amp;nbsp; cecha: wartość; &amp;nbsp; &hellip; &quot;&gt;
+
+&amp;nbsp; &amp;nbsp; Przykładowy tekst. &amp;nbsp; &amp;nbsp;
+
+&lt;/p&gt; </textarea> 
+        <h2>3. Co może być selektorem?</h2>
+        <textarea disabled>W ogólnym języku CSS (dla stylów zewnętrznych i wewnętrznych, a nie lokalnych), selektor wskazuje, które elementy HTML mają zostać ostylowane. Może to być: 
+
+    Nazwa elementu (typ): np. p (wszystkie akapity), h1, div.
+    Identyfikator (ID): unikalny identyfikator elementu, poprzedzony znakiem hash # (np. #logo).
+    Klasa (class): nazwa klasy, poprzedzona kropką . (np. .czerwony-tekst). Elementy mogą współdzielić tę samą klasę.
+    Selektor uniwersalny: gwiazdka * (dotyczy wszystkich elementów).
+    Selektory atrybutów: wybierają elementy na podstawie ich atrybutów (np. [type="text"]).
+    Pseudoklasy i pseudoelementy: (np. :hover dla elementu po najechaniu myszą, ::first-line dla pierwszej linii tekstu). </textarea>
+    <h2>4. Co wpisujemy jako "cechę". Jakie jest znaczenie średników?</h2>
+    <textarea disabled>"Cechą" (właściwością) jest nazwa atrybutu CSS, który chcemy zmienić (np. color, font-size, margin, background-color, width, height).
+Znaczenie średników: Średniki służą do oddzielania poszczególnych deklaracji (par cecha: wartość) w bloku stylu. Pozwalają na zdefiniowanie wielu reguł dla jednego selektora (lub w jednym atrybucie style). Ostatni średnik w bloku jest opcjonalny, ale zalecany dla spójności. </textarea>
+<h2>5. Co wpisujemy jako "wartość" (w deklaracji stylu)?</h2>
+<textarea disabled>"Wartością" jest konkretne ustawienie przypisywane danej cesze (właściwości). Wartości te zależą od danej cechy: 
+
+    Jednostki: wartości liczbowe z jednostką (np. 14px, 2em, 10%, auto).
+    Słowa kluczowe: predefiniowane nazwy (np. red, bold, center, none, relative).
+    Kody kolorów: np. #FF0000 (HEX), rgb(255, 0, 0).
+    Nazwy czcionek: np. Arial, serif.
+    Adresy URL: np. url('obrazek.jpg') dla obrazów tła. </textarea>
+    </body>
+</html>
